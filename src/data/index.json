@@ -1,0 +1,55 @@
+{
+    "skills":[
+        {
+            "id":1,
+            "src":"./img/code.png",
+            "title":"Front-End",
+            "description":"HTML5, CSS3, Javascript, React, Bootstrap, EJS"
+        },
+        {
+            "id":2,
+            "src":"./img/database.png",
+            "title":"Database",
+            "description":"SQL, MySQL, MongoDB, Firebase, PostgreSQL"
+        },
+        {
+            "id":3,
+            "src":"./img/bar-chart.png",
+            "title":"Data Analysis",
+            "description":"Python, R, Tableau, Excel, Report Builder"
+        }
+    ],
+    "portfolio":[
+        {
+            "id":1,
+            "src":"./img/sugaraide.png",
+            "title":"SugarAIde",
+            "description":"A simple application to help people at risk of diabetes by harnessing the power of AI and open source datasets to keep track of your diet and eating habits.",
+            "link":"https://drab-rose-indri-sari.cyclic.app/"
+        },
+        {
+            "id":2,
+            "src":"./img/rpg.png",
+            "title":"Role Playing Game",
+            "description":"A simple role playing game made with HTML, CSS, and Javascript. Based on the FreeCodeCamp tutorial with additional features I implemented.",
+            "link":"https://hirosrpg.netlify.app/"
+
+        },
+        {
+            "id":3,
+            "src":"./img/jobtrackr.png",
+            "title":"JobTrackr",
+            "description":"JobTrackr is a web app that simplifies job searching by tracking offers, interviews, and enabling resume and cover letter uploads for each application. This app was made for HackTheBreak 2023.",
+            "link":"https://jobtrackr.netlify.app/"
+
+        },
+        {
+            "id":4,
+            "src":"./img/snowglobe.png",
+            "title":"SnowGlobe",
+            "description":"We are developing SnowGlobe, a web app to help drivers and commuters to alert others of weather hazards on the road by using real-time and user data.",
+            "link":"https://team-project-bby01.web.app/"
+
+        }
+    ]
+}
