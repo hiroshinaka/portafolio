@@ -380,36 +380,42 @@ h3{
   width: 100%;
 }
 
-.portfolio--section--img{
-  border-radius: 8px;
-  width: 100%;
+.portfolio--section--img {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.portfolio--section--img > img{
-  width: 100%;
-  border-radius: 8px;
+.portfolio--section--img > img {
+  max-width: 100%;  /* Ensures image does not exceed container width */
+  max-height: 100%; /* Ensures image does not exceed container height */
+  object-fit: cover; /* Covers the area without distorting ratio */
 }
 
-.portfolio--section--card{
+
+.portfolio--section--card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 32px;
-  flex: 1 0 0;
   background: white;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 12px; /* Adjusted for all corners */
+  overflow: hidden; /* Prevents content from overflowing */
+  min-height: 400px; /* Minimum height */
+  max-height: 400px; /* Maximum height to ensure consistency */
+  width: 100%; /* maintain consistent width */
 }
 
-.portfolio--section--card--content{
-  display: flex;
+.portfolio--section--card--content {
   padding: 32px;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  gap: 32px;
+  gap: 16px; /* Adjust gap for better spacing */
 }
 
 .portfolio--section--title{

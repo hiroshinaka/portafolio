@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 export default function HeroSection() {
     return(
         <section id="heroSection" className="hero--section">
@@ -14,7 +17,6 @@ export default function HeroSection() {
                     I am passionate about creating software that is both functional and beautiful. 
                     </p>
             </div>
-            <button className="btn btn-primary">Get in Touch</button>
         </div>
         <div className="hero--section--img">
             <img src="./img/hero_img.png" alt="hero_img" />
