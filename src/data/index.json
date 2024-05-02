@@ -17,6 +17,12 @@
             "src":"./img/bar-chart.png",
             "title":"Data Analysis",
             "description":"Python, R, Tableau, Excel, Report Builder"
+        },
+        { 
+            "id":4,
+            "src":"./img/cloud.png",
+            "title":"Cloud",
+            "description":"AWS, Firebase"
         }
     ],
     "portfolio":[
