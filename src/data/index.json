@@ -61,7 +61,7 @@
             "id":5,
             "src":"./img/weatherDashboard.png",
             "title":"Real-Time Weather Dashboard",
-            "description":"Local dashboard of the weather for a specific city. Data is fetched from the OpenWeather API, processed using kafka, and displayed in real-time using Streamlit Dashboard.",
+            "description":"Local dashboard of the weather for a specific city. Data is fetched from the OpenWeather API, processed using kafka, storedin Postgres, and displayed in real-time using Streamlit Dashboard.",
             "link":"https://github.com/hiroshinaka/Real-Time-Weather-Dashboard"
 
         }
