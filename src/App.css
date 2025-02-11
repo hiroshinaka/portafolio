@@ -390,8 +390,8 @@ h3{
 }
 
 .portfolio--section--img > img {
-  max-width: 100%;  /* Ensures image does not exceed container width */
-  max-height: 100%; /* Ensures image does not exceed container height */
+  max-width: 50%;  /* Ensures image does not exceed container width */
+  max-height: 50%; /* Ensures image does not exceed container height */
   object-fit: cover; /* Covers the area without distorting ratio */
 }
 

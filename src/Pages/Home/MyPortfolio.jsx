@@ -1,4 +1,6 @@
 import data from "../../data/index.json";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 export default function MyPortfolio() {
   return (
@@ -30,35 +32,15 @@ export default function MyPortfolio() {
       </div>
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (
-          <div key={index} className="portfolio--section--card">
-            <div className="portfolio--section--img">
-              <img src={item.src} alt="Placeholder"/>
-            </div>
-            <div className="portfolio--section--card--content">
-              <div>
-                <h3 className="portfolio--section--title">{item.title}</h3>
-                <p className="text-md">{item.description}</p>
-              </div>
-              <p className="text-sm portfolio--link">
-                <a href={item.link}>Visit Website</a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 20 19"
-                  fill="none"
-                >
-                  <path
-                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                    stroke="currentColor"
-                    strokeWidth="2.66667"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </p>
-            </div>
-          </div>
+          <Card key={index} style={{ width: '18rem', margin: '1rem' }}>
+            <Card.Img variant="top" src={item.src} alt={item.title} style={{ width: '286px',height: '180px', objectFit: 'cover', borderRadius:'10px'}} />
+            <Card.Body>
+              <Card.Title>{item.title}</Card.Title>
+              <Card.Text style={{fontSize: '12px'}}>{item.description} </Card.Text>
+              <br />
+              <Button variant="primary" href={item.link} target="_blank">Visit Website</Button>
+            </Card.Body>
+          </Card>
         ))}
       </div>
     </section>
