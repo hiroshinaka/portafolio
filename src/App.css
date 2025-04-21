@@ -1,11 +1,14 @@
 /* Global CSS> */
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
+  background-color: #e4e4e4;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -446,7 +449,42 @@ h3{
 .portfolio--section--card:hover path{
   stroke: #006b6a;
 }
+/*Timeline section*/
 
+
+.timeline--section{
+  display:flex;
+  padding: 122px 85px;
+  flex-direction: column;
+  padding-top: 120px; 
+  position: relative;
+  z-index: 0;
+}
+.timeline-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  border-radius: 50%;
+  scroll-margin-top: 130px;   
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+.vertical-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px; 
+  width: 4px;
+  height: 100%;
+  background: #ddd;
+  z-index: 1;
+}
+
+
+.vertical-timeline-element {
+  z-index: 2;
+  position: relative;
+}
 
 
 /*My portfolio section end */
@@ -705,6 +743,8 @@ input[type="checkbox"] {
 .navbar{
   padding-left: 15px;
   padding-right: 15px;
+  z-index: 100;
+
 }
 
 .navbar--img img{

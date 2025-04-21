@@ -72,5 +72,47 @@
             "description":" Chat messaing app using EJS, Socket.io, and Node.js in the front end. With a mongdoDB and MySQL database to store the messages and users. Application was made for term 3 Database class",
             "link":"https://chatmessagingapp.onrender.com/"
         }
+    ],
+    "timelineItems": [
+        {
+            "date": "September 2016 - April 2021",
+            "title": "Bachelor of Science, Major in Molecular Biology and Biotechemistry",
+            "description": "Simon Fraser University",
+            "location": "Burnaby, BC, Canada",
+            "details":"",
+            "icon":"./img/timelinelogo/sfu.jpg"
+        },
+        {
+            "date":"April 2021 - April 2022",
+            "title": "Research and Development Technician",
+            "description":"Neova Technologies",
+            "location": "Abbotsford, BC, Canada",
+            "details":"",
+            "icon":"./img/timelinelogo/neova.png"
+        },
+        {
+            "date":"August 2022 - January 2023",
+            "title": "Genetics Technician",
+            "decription": "LifeLabs",
+            "location": "Surrey, BC, Canada",
+            "details":"",
+            "icon":"./img/timelinelogo/lifelabs.png"
+        },
+        {
+            "date":"January 2023 - December 2025",
+            "title": "Computer Systems Technology Diploma",
+            "description":"British Columbia Institute of Technology",
+            "location": "Vancouver, BC, Canada",
+            "details":"",
+            "icon":"./img/timelinelogo/bcit.png"
+        },
+        {
+            "date":"January 2024 - December 2024",
+            "title":"Database Operations Helpdesk Associate",
+            "description":"Absoute Security",
+            "location":"Vancouver, BC, Canada",
+            "details":"",
+            "icon":"./img/timelinelogo/absolute.jpg"
+        }
     ]
 }
