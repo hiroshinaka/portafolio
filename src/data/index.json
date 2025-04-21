@@ -28,10 +28,10 @@
     "portfolio":[
         {
             "id":1,
-            "src":"./img/sugaraide.png",
+            "src":"./img/mockups/sugaraide.png",
             "title":"SugarAIde",
             "description":"A simple application to help people at risk of diabetes by harnessing the power of AI and open source datasets to keep track of your diet and eating habits.",
-            "link":"https://drab-rose-indri-sari.cyclic.app/"
+            "link":"https://sugaraide.onrender.com"
         },
         {
             "id":2,
@@ -43,7 +43,7 @@
         },
         {
             "id":3,
-            "src":"./img/jobtrackr.png",
+            "src":"./img/mockups/jobtrackr.png",
             "title":"JobTrackr",
             "description":"JobTrackr is a web app that simplifies job searching by tracking offers, interviews, and enabling resume and cover letter uploads for each application. This app was made for HackTheBreak 2023.",
             "link":"https://jobtrackr.netlify.app/"
@@ -51,7 +51,7 @@
         },
         {
             "id":4,
-            "src":"./img/snowglobe.png",
+            "src":"./img/mockups/snowglobe.png",
             "title":"SnowGlobe",
             "description":"We are developing SnowGlobe, a web app to help drivers and commuters to alert others of weather hazards on the road by using real-time and user data.",
             "link":"https://team-project-bby01.web.app/"
@@ -64,6 +64,13 @@
             "description":"Local dashboard of the weather for a specific city. Data is fetched from the OpenWeather API, processed using kafka, storedin Postgres, and displayed in real-time using Streamlit Dashboard.",
             "link":"https://github.com/hiroshinaka/Real-Time-Weather-Dashboard"
 
+        },
+        {
+            "id":6,
+            "src": "./img/mockups/chatmessagingapp.png",
+            "title":"Kuromi Message",
+            "description":" Chat messaing app using EJS, Socket.io, and Node.js in the front end. With a mongdoDB and MySQL database to store the messages and users. Application was made for term 3 Database class",
+            "link":"https://chatmessagingapp.onrender.com/"
         }
     ]
 }

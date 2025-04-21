@@ -32,7 +32,7 @@ export default function MyPortfolio() {
       </div>
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (
-          <Card key={index} style={{ width: '18rem', margin: '1rem' }}>
+          <Card key={index} style={{ width: '18rem', margin: '1rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', borderRadius: '10px', padding: '10px' }}>
             <Card.Img variant="top" src={item.src} alt={item.title} style={{ width: '286px',height: '180px', objectFit: 'cover', borderRadius:'10px'}} />
             <Card.Body>
               <Card.Title>{item.title}</Card.Title>
