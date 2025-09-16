@@ -113,6 +113,14 @@
             "location":"Vancouver, BC, Canada",
             "details":"",
             "icon":"./img/timelinelogo/absolute.jpg"
+        },
+        {
+            "date":"July 2025 - August 2025",
+            "title": "Junior Development Assistant, Data",
+            "description":"BC SPCA",
+            "location" : " Vancouver, BC, Canada",
+            "details":"",
+            "icon":"./img/timelinelogo/bcpsca.jpg"    
         }
     ]
 }
