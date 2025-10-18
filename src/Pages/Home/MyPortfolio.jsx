@@ -1,6 +1,5 @@
 import data from "../../data/index.json";
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 
 export default function MyPortfolio() {
   return (
@@ -30,38 +29,20 @@ export default function MyPortfolio() {
           </button>
         </div>
       </div>
-      <div className="portfolio--section--container">
+      <div className="portfolio--section--container portfolio-grid">
         {data?.portfolio?.map((item, index) => (
-          <Card
-          key={index}
-          style={{
-            width: '100%',
-            maxWidth: '400px',
-            margin: '1rem auto',
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-            borderRadius: '10px',
-            padding: '10px',
-            boxSizing: 'border-box'
-          }}
-        >        
-            <Card.Img
-                variant="top"
-                src={item.src}
-                alt={item.title}
-                style={{
-                  width: '100%',
-                  height: '180px',
-                  objectFit: 'cover',
-                  borderRadius: '10px'
-                }}
-              />
-            <Card.Body>
-              <Card.Title style={{fontWeight: 'bold'}}>{item.title}</Card.Title>
-              <Card.Text style={{fontSize: '12px'}}>{item.description} </Card.Text>
-              <br />
-              <Button variant="primary" href={item.link} target="_blank">Visit Website</Button>
-            </Card.Body>
-          </Card>
+          <article key={index} className="project-card">
+            <div className="project-card__media">
+              <img src={item.src} alt={item.title} loading="lazy" />
+            </div>
+            <div className="project-card__body">
+              <h3 className="project-card__title">{item.title}</h3>
+              <p className="project-card__desc">{item.description}</p>
+              <div className="project-card__actions">
+                <Button variant="primary" href={item.link} target="_blank" rel="noopener noreferrer">Visit Website</Button>
+              </div>
+            </div>
+          </article>
         ))}
       </div>
     </section>

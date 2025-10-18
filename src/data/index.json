@@ -68,8 +68,8 @@
         {
             "id":6,
             "src": "./img/mockups/chatmessagingapp.png",
-            "title":"Kuromi Message",
-            "description":" Chat messaing app using EJS, Socket.io, and Node.js in the front end. With a mongdoDB and MySQL database to store the messages and users. Application was made for term 3 Database class",
+            "title":"Messaging Application",
+            "description":" Chat messaging app using EJS, Socket.io, and Node.js in the front end. With a mongdoDB and MySQL database to store the messages and users. Application was made for term 3 Database class",
             "link":"https://chatmessagingapp.onrender.com/"
         }
     ],
