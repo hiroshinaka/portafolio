@@ -3,26 +3,26 @@
         {
             "id":1,
             "src":"./img/code.png",
-            "title":"Front-End",
-            "description":"HTML5, CSS3, Javascript, React, Bootstrap, EJS"
+            "title":"Web Development",
+            "description":"HTML5, CSS3, Javascript, React, Bootstrap, EJS, Typescript, TailwindCSS"
         },
         {
             "id":2,
             "src":"./img/database.png",
             "title":"Database",
-            "description":"SQL, MySQL, MongoDB, Firebase, PostgreSQL"
+            "description":"Microsoft SQL Server, MySQL, MongoDB, Firebase, PostgreSQL"
         },
         {
             "id":3,
             "src":"./img/bar-chart.png",
             "title":"Data Analysis",
-            "description":"Python, R, Tableau, Excel, Report Builder"
+            "description":"Python, R, Tableau, Excel, Report Builder, Power BI, Raiser's Edge"
         },
         { 
             "id":4,
             "src":"./img/cloud.png",
             "title":"Cloud",
-            "description":"AWS, Firebase"
+            "description":"AWS, Firebase, Azure"
         }
     ],
     "portfolio":[
