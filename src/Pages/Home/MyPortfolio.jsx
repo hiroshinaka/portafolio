@@ -1,13 +1,65 @@
+import { useState } from "react";
 import data from "../../data/index.json";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
+
+function GallerySlideshow({ images, title }) {
+  const validImages = Array.isArray(images) ? images.filter(Boolean) : [];
+  const [index, setIndex] = useState(0);
+
+  if (!validImages.length) return null;
+
+  const total = validImages.length;
+  const current = validImages[Math.min(index, total - 1)];
+
+  const goPrev = () => {
+    setIndex((prev) => (prev - 1 + total) % total);
+  };
+
+  const goNext = () => {
+    setIndex((prev) => (prev + 1) % total);
+  };
+
+  return (
+    <div className="project-card__media project-slideshow">
+      <img
+        src={current}
+        alt={`${title} slide ${index + 1}`}
+        loading="lazy"
+      />
+      {total > 1 && (
+        <div className="project-slideshow__controls">
+          <button
+            type="button"
+            className="project-slideshow__arrow"
+            onClick={goPrev}
+            aria-label="Previous slide"
+          >
+            ‹
+          </button>
+          <span className="project-slideshow__indicator">
+            {index + 1} / {total}
+          </span>
+          <button
+            type="button"
+            className="project-slideshow__arrow"
+            onClick={goNext}
+            aria-label="Next slide"
+          >
+            ›
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function MyPortfolio() {
   return (
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <p className="sub--title">Recent Projects</p>
-          <h2 className="section--heading">My Portfolio</h2>
+          <p className="sub--title">Portfolio</p>
+          <h2 className="section--heading">My Projects</h2>
         </div>
         <div>
           <button className="btn btn-github">
@@ -29,17 +81,32 @@ export default function MyPortfolio() {
           </button>
         </div>
       </div>
+
       <div className="portfolio--section--container portfolio-grid">
         {data?.portfolio?.map((item, index) => (
           <article key={index} className="project-card">
-            <div className="project-card__media">
-              <img src={item.src} alt={item.title} loading="lazy" />
-            </div>
+            {Array.isArray(item.gallery) && item.gallery.length > 0 ? (
+              <GallerySlideshow images={item.gallery} title={item.title} />
+            ) : (
+              <div className="project-card__media">
+                <img src={item.src} alt={item.title} loading="lazy" />
+              </div>
+            )}
             <div className="project-card__body">
               <h3 className="project-card__title">{item.title}</h3>
               <p className="project-card__desc">{item.description}</p>
+
               <div className="project-card__actions">
-                <Button variant="primary" href={item.link} target="_blank" rel="noopener noreferrer">Visit Website</Button>
+                {item.link && (
+                  <Button
+                    variant="primary"
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit Website
+                  </Button>
+                )}
               </div>
             </div>
           </article>

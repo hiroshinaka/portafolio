@@ -72,6 +72,20 @@
             "description":" Chat messaging app using EJS, Socket.io, and Node.js in the front end. With a mongdoDB and MySQL database to store the messages and users. Application was made for term 3 Database class",
             "link":"https://chatmessagingapp.onrender.com/"
         }
+        ,
+        {
+            "id":7,
+            "src":"./img/contoso screenshots/slide 1.png",
+            "title":"Contoso Dashboard",
+            "description":"This is my first project using Power BI for COMP 4926. Dashboard screenshots from Power BI using the contoso retail dataset to visualize sales, profits, and customer demographics. Includes KPIs, slicers, filters, and tooltips",
+            "link":"",
+            "gallery":[
+                "./img/contoso screenshots/slide 1.png",
+                "./img/contoso screenshots/slide 2.png",
+                "./img/contoso screenshots/slide 3.png",
+                "./img/contoso screenshots/slide 4.png"
+            ]
+        }
     ],
     "timelineItems": [
         {
